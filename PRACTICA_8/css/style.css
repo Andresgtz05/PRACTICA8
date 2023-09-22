@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.areaPrincipal {
+    /* Así se define una clase */
+    background-image: url('../img/fon.jpg'); /* Agregar fondo de imagen al div */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    -webkit-background-size: 100% 100%; /* Safari 3.0 */
+    -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%; /* Opera 9.5 */
+    background-size: 100% 100%; /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+}
+
+#encabezado {
+    background: #556B2F;
+    height: 240px;
+    text-align: center;
+    background-image: url('../img/logo2.png');
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+.piedePagina{
+    width: 100%;
+    height: 100px;
+    background: #CC9933;
+    color: black;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+}
+#menu{
+    height: 40px;
+    position: relative;
+    top: 200px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black;
+}
+#datos{
+    width: 80%;
+    background-color:#f32f2f ;
+    height: 600px;
+    margin: auto;
+    opacity: 1;
+    color: antiquewhite;
+    padding: 10px;
+    font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+
+#encabezado p {
+    font-style: italic; 
+    font-family: 'NuevaCursiva', cursive; 
+    color: #fff; 
+    font-size: 60px;    
+}
+
+.copyright {
+    background-color: #556B2F;
+    color: white; 
+    text-align: center;
+    padding: 10px; 
+    font-size: 14px; 
+}
+
+#datos {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+#datos p:first-child {
+    font-size: 60px; 
+    font-weight: bold; 
+    color: #000; 
+    margin-bottom: 10px;
+}
+
+#datos p:not(:first-child) {
+    font-size: 20px; 
+    color: #fff; 
+}
+
+#datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#imagen {
+    margin-top: 60px; 
+    width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/**Nosotros**/
+#datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#datos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#datos p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify; /* Alineación justificada para los párrafos */
+}
+
+/**productos**/
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto {
+    width: 300px;
+    background-color: #000;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin: 10px 0;
+
+}
+
+.producto p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.producto .precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/*galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.imagen-galeria {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05);
+}
+
+.imagen-galeria img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.imagen-galeria:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.overlay p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.imagen-galeria img {
+    width: 400px; 
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.imagen-galeria {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05);
+}
+
+.imagen-galeria::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 10px solid #000;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.imagen-galeria img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+}
+
+/*contacto*/
+.contacto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#mensaje-confirmacion {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+
+

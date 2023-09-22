@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Practica 8</title>
+    </head>
+    <body>
+        <div id="encabezado">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" title="pagina principal">Inicio</a></li>
+                    <li><a href="nos.html" title="Descripcion del negocio">Nosotros</a></li>
+                    <li><a href="cat.html" title="Catalogo">Nuestros productos</a></li>
+                    <li><a href="gal.html" title="Fotos">Galeria</a></li>
+                    <li><a href="ccont.html" title="Nuestros datos">Contacto</a></li>
+                </ul>
+            </div>
+            <p>CAFE ZAPATA</p>
+        </div>
+        <div class="areaPrincipal">
+                <div class="productos">
+
+                    <div class="galeria">
+                        <div class="imagen-galeria">
+                            <img src="img/caf1.jpg" alt="Café 1">
+                            <div class="overlay">
+                                <h4>Instalaciones.</h4>
+                                <p>Delicioso café recién preparado.</p>
+                            </div>
+                        </div>
+                        <div class="imagen-galeria">
+                            <img src="img/caf2.jpg" alt="Café 2">
+                            <div class="overlay">
+                                <h4>Nuestra barra.</h4>
+                                <p>Hecho con amor.</p>
+                            </div>
+                        </div>
+                        <div class="imagen-galeria">
+                            <img src="img/caf3.jpg" alt="Café 3">
+                            <div class="overlay">
+                                <h4>Nuestrs clientes</h4>
+                                <p>El cafe la medicina del alma.</p>
+                            </div>
+                        </div>
+                        <div class="imagen-galeria">
+                            <img src="img/caf4.jpg" alt="Café 4">
+                            <div class="overlay">
+                                <h4>Amigos</h4>
+                                <p>Todo es mejor entre amigos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                  
+        <br>
+        <div class="copyright">
+            <p>&copy; Universidad Autónoma de Chiapas</p>
+        </div>
+
+        <script>
+            // JavaScript para abrir imágenes en una nueva ventana emergente
+            const imagenesGaleria = document.querySelectorAll('.imagen-galeria img');
+        
+            imagenesGaleria.forEach((imagen, index) => {
+                imagen.addEventListener('click', () => {
+                    window.open(imagen.src, '_blank');
+                });
+            });
+        </script>
+    </body>
+</html>
